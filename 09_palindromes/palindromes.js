@@ -1,6 +1,6 @@
 const palindromes = function (str) {
-    str = str.replace(/[^a-zA-Z0-9]/g, '')
-    return str.toLowerCase().split("").reverse().join("") === str.toLowerCase();
+    str = str.toLowerCase().replace(/[^a-zA-Z0-9]/g, '')
+    return str.split("").reverse().join("") === str;
 };
 
 console.log(palindromes("A car, a man, a maraca"));
